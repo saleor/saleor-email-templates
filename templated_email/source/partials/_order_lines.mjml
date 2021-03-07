@@ -28,14 +28,13 @@
             {{price order.tax_amount order.tax_amount order.currency display_gross=order.display_gross_prices}}
           </td>
         </tr>
-        {{#if order.discount_amount}}
+        {{#if order.voucher_discount}}
           <tr>
             <td colspan="3" style="text-align: right;">
-              {{order.discount_amount}}
                 Discount
             </td>
             <td style="text-align: right;">
-              {{price order.discount_amount order.discount_amount order.currency display_gross=order.display_gross_prices}}
+              {{price order.voucher_discount.amount_value order.voucher_discount.amount_value order.currency display_gross=order.display_gross_prices}}
             </td>
           </tr>
         {{/if}}
