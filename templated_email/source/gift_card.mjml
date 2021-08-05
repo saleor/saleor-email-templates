@@ -11,7 +11,7 @@
         </mj-text>
         <mj-text>
             You have received new gift card in {{ site_name }}!
-            The gift card code is: {{ code }}
+            The gift card code is: {{ gift_card.code }}
         </mj-text>
       </mj-column>
     </mj-section>
