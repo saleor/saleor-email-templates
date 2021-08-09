@@ -7,11 +7,21 @@
     <mj-section>
       <mj-column>
         <mj-text font-size="16px">
-            Hi!
+          Hi, {{ recipient.name }}
+          Here is your gift card!
         </mj-text>
         <mj-text>
-            You have received new gift card in {{ site_name }}!
-            The gift card code is: {{ gift_card.code }}
+          {{ gift_card.currency }} {{ gift_card.balance }}
+          Gift card code: {{ gift_card.code }}
+        </mj-text>
+        <mj-text>
+          Use this card as payment for anything you like in {{ site_name }}.
+          Enter the gift card code at checkout to redeem your gift card.
+        </mj-text>
+        <mj-text>
+          <a href="{{ domain }}">
+            {{ site_name }}
+          </a>
         </mj-text>
       </mj-column>
     </mj-section>
