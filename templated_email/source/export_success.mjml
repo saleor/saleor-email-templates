@@ -10,7 +10,7 @@
             Hi!
         </mj-text>
         <mj-text>
-            Your file with products data is ready to download: <a href="{{csv_link}}">{{csv_link}}</a>
+            Your file with {{data_type}} data is ready to download: <a href="{{csv_link}}">{{csv_link}}</a>
         </mj-text>
       </mj-column>
     </mj-section>
