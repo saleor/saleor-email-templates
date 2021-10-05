@@ -10,7 +10,7 @@
             Hi!
         </mj-text>
         <mj-text>
-            Your order #{{order.id}} has been canceled.
+            Your order #{{order.number}} has been canceled.
         </mj-text>
       </mj-column>
     </mj-section>
