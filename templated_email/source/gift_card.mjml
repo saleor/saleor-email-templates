@@ -1,0 +1,34 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./shared/styles.mjml" />
+  </mj-head>
+  <mj-body>
+    <mj-include path="./shared/header.mjml" />
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="16px">
+          {{#if user.first_name}}
+            Hi, {{ user.first_name }} {{ user.last_name }}<br/>
+          {{else}}
+            Hi, {{ recipient_email }}
+          {{/if}}
+          Here is your gift card!<br/>
+        </mj-text>
+        <mj-text>
+          {{ gift_card.currency }} {{ gift_card.balance }}<br/>
+          Gift card code: {{ gift_card.code }}<br/>
+        </mj-text>
+        <mj-text>
+          Use this card as payment for anything you like in {{ site_name }}.<br/>
+          Enter the gift card code at checkout to redeem your gift card.<br/>
+        </mj-text>
+        <mj-text>
+          <a href="{{ domain }}">
+            {{ site_name }}
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-include path="./shared/footer.mjml" />
+  </mj-body>
+</mjml>
