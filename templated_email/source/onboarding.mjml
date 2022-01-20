@@ -1,0 +1,42 @@
+<mjml>
+    <mj-head>
+        <mj-include path="./shared/styles.mjml" />
+    </mj-head>
+    <mj-body>
+        <mj-include path="./shared/header.mjml" />
+        <mj-section>
+            <mj-column>
+                <mj-text font-size="16px">
+                    Hi {{ first_name }},
+                </mj-text>
+                <mj-text>
+                    The Farmers Feeding Utah Marketplace is open for business.
+                    As a Touch of Utah subscriber, you have early access to shop.
+                </mj-text>
+                <mj-text>
+                    Just click the link below, create a password and you're in!
+                </mj-text>
+                <mj-text>
+                    <a href="{{onboarding_url}}">
+                        Proceed to registration!
+                    </a>
+                </mj-text>
+                <mj-text>
+                    Each month, we will be adding new products to the marketplace from the Touch of Utah box.
+                </mj-text>
+                <mj-text>
+                    We value your feedback. Please share your thoughts with us at
+                    <a href="mailto:support@farmersfeedingutah.com?subject=Marketplace%20feeback">
+                        support@farmersfeedingutah.com
+                    </a>
+                    and we'll build a great marketplace together!
+                </mj-text>
+                <mj-text>
+                    Your friend, <br/>
+                    The Farmers Feeding Utah Inc. Team <br/>
+                    support@farmersfeedingutah.com <br/>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
