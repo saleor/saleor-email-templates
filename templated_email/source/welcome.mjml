@@ -1,0 +1,38 @@
+<mjml>
+    <mj-head>
+        <mj-include path="./shared/styles.mjml" />
+    </mj-head>
+    <mj-body>
+        <mj-include path="./shared/header.mjml" />
+        <mj-section>
+            <mj-column>
+                <mj-text font-size="16px">
+                    Hi {{ first_name }},
+                </mj-text>
+                <mj-text>
+                    Thank you for registering for the Farmers Feeding Utah Inc. Marketplace.
+                </mj-text>
+                <mj-text>
+                    You can return to the marketplace any time by going to:
+                </mj-text>
+                <mj-text>
+                    <a href="{{domain}}">
+                        {{ domain }}
+                    </a>
+                </mj-text>
+                <mj-text>
+                    We're always adding new products directly from Utah farmers.
+                    Every time you place an order, you're helping farms in Utah thrive.
+                </mj-text>
+                <mj-text>
+                    Please let us know if you have any suggestions for improvement at support@farmersfeedingutah.com
+                </mj-text>
+                <mj-text>
+                    Your friend, <br/>
+                    The Farmers Feeding Utah Inc. Team <br/>
+                    support@farmersfeedingutah.com <br/>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
