@@ -10,11 +10,18 @@
             Hi!
         </mj-text>
         <mj-text>
-          {{#if order.order_details_url}}
-              Thank you for your order. Below is the list of ordered products. To see your payment details please
-              visit: <a href="{{order.order_details_url}}">{{order.order_details_url}}</a>
+          {{#if shipping_estimate_text}}
+            {{shipping_estimate_text}}
           {{else}}
-              Thank you for your order. Below is the list of ordered products.
+            Thank you for your order.
+          {{/if}}
+        </mj-text>
+        <mj-text>
+          {{#if order.order_details_url}}
+            Below is the list of ordered products. To see your payment details please
+            visit: <a href="{{order.order_details_url}}">{{order.order_details_url}}</a>
+          {{else}}
+            Below is the list of ordered products.
           {{/if}}
         </mj-text>
       </mj-column>
