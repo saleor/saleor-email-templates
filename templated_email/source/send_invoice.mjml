@@ -13,7 +13,7 @@
             In order to download invoice {{number}}, click the link below.
         </mj-text>
         <mj-text>
-          <a href="{{download_url}}">
+          <a href="{{invoice.download_url}}">
             {{invoice.download_url}}
           </a>
         </mj-text>
