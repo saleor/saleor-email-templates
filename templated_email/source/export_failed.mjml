@@ -10,7 +10,7 @@
             Hi!
         </mj-text>
         <mj-text>
-            Sorry, we couldn't finish exporting products, some unexpected errors occurred.
+            Sorry, we couldn't finish exporting {{data_type}}, some unexpected errors occurred.
             Please try again.
         </mj-text>
       </mj-column>
