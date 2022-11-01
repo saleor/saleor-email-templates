@@ -1,0 +1,39 @@
+<mj-section>
+    <mj-column>
+        <mj-text font-size="24px" padding-bottom="25px">
+            Price
+        </mj-text>
+        <mj-table css-class="table-with-border">
+            <tbody>
+                {{#if order.voucher_discount}}
+                <tr class="table-item-row">
+                    <td style="text-align: left;">
+                        Extra discount
+                    </td>
+                    <td style="text-align: right; color: green;">
+                        <strong>
+                            {{price order.voucher_discount.amount_value order.voucher_discount.amount_value order.currency display_gross=order.display_gross_prices}}
+                        </strong>
+                    </td>
+                </tr>
+                {{/if}}
+                <tr class="table-item-row">
+                    {{# if order.display_gross_price }}
+                    <td style="text-align: left;">
+                        Total incl. VAT
+                    </td>
+                    {{ else }}
+                    <td style="text-align: left;">
+                        Total excl. VAT
+                    </td>
+                    {{/if}}
+                    <td style="text-align: right;">
+                        <strong>
+                            {{price order.total_net_amount order.total_gross_amount order.currency display_gross=order.display_gross_prices}}
+                        </strong>
+                    </td>
+                </tr>
+            </tbody>
+        </mj-table>
+    </mj-column>
+</mj-section>

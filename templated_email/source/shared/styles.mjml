@@ -9,15 +9,35 @@
 
   td, th {
     padding: 5px;
+    vertical-align:top;
   }
+
+  table {
+      border-spacing: 0 1em;
+  }
+
 
   .table-header-row {
      border-bottom: 2px solid #000;
   }
 
   .table-item-row {
-    border-bottom: 1px solid #D3D1D0;
+    border: 1px solid #D3D1D0;
   }
+
+  .table-with-border {
+    border: 1px solid #D3D1D0;
+  }
+
+  .table-with-border .table-item-row {
+    border: 0;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
 </mj-style>
 <mj-style>
 

@@ -1,14 +1,13 @@
-<mj-section>
-  <mj-column>
-    <mj-text>
-        This is an automatically generated e-mail, please do not reply.
-    </mj-text>
-  </mj-column>
-</mj-section>
 <mj-section background-color="#F2F2F2">
   <mj-column>
     <mj-text align="center">
-        Sincerely, {{ site_name }}
+        {{ site_name }}
+    </mj-text>
+    <mj-text align="center">
+        {{ shop.company_address.street_address_1 }} {{ shop.company_address.street_address_2 }}, {{ shop.company_address.postal_code }} {{ shop.company_address.city }}, {{ shop.company_address.country }}
+    </mj-text>
+    <mj-text align="center">
+        {{ shop.company_address.phone }} | {{ settings.default_from_email }}
     </mj-text>
   </mj-column>
 </mj-section>

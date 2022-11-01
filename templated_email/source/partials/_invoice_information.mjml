@@ -1,0 +1,57 @@
+<mj-section>
+    <mj-column>
+        <mj-text font-size="24px" padding-bottom="25px">
+            Your invoice information
+        </mj-text>
+        <mj-table css-class="table-with-border">
+            <tbody>
+                <tr class="table-item-row">
+                    <td>
+                        Company name
+                    </td>
+                    <td>
+                        <strong>
+                            {{ order.billing_address.company_name }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Contact or department
+                    </td>
+                    <td>
+                        <strong>
+                            <p>{{ order.billing_address.first_name }} {{ order.billing_address.last_name }}</p>
+                            <p>{{ vacancy.company_department }}</p>
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Invoice address
+                    </td>
+                    <td>
+                        <strong>
+                            <p>{{ order.billing_address.company_name }}</p>
+                            <p>{{ order.billing_address.street_address_1 }}</p>
+                            <p>{{ order.billing_address.street_address_2 }}</p>
+                            <p>{{ order.billing_address.city }}</p>
+                            <p>{{ order.billing_address.postal_code }}</p>
+                            <p>{{ order.billing_address.country }}</p>
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Invoice email
+                    </td>
+                    <td>
+                        <strong>
+                            {{ order.email }}
+                        </strong>
+                    </td>
+                </tr>
+            </tbody>
+        </mj-table>
+    </mj-column>
+</mj-section>

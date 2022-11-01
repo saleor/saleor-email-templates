@@ -1,0 +1,116 @@
+<mj-section>
+    <mj-column>
+        <mj-text font-size="24px" padding-bottom="25px">
+            Your employer posting details
+        </mj-text>
+        <mj-table css-class="table-with-border">
+            <tbody>
+                <tr class="table-item-row">
+                    <td>
+                        Posting title
+                    </td>
+                    <td>
+                        <strong>
+                            {{ vacancy.job_title }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Company name
+                    </td>
+                    <td>
+                        <strong>
+                            {{ vacancy.company_name }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Company department
+                    </td>
+                    <td>
+                        <strong>
+                            {{ vacancy.company_department }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Working address
+                    </td>
+                    <td>
+                        <strong>
+                            <p>{{ vacancy.working_address.street_address_1 }}</p>
+                            <p>{{ vacancy.working_address.street_address_2 }}</p>
+                            <p>{{ vacancy.working_address.postal_code }}</p>
+                            <p>{{ vacancy.working_address.city }}</p>
+                            <p>{{ vacancy.working_address.country }}</p>
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Contact info
+                    </td>
+                    <td>
+                        <strong>
+                            <p>{{ vacancy.contact_info_name }}</p>
+                            <p>{{ vacancy.contact_info_phone_number }}</p>
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Minimum years of experience
+                    </td>
+                    <td>
+                        <strong>
+                            {{ vacancy.minimum_years_of_experience }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Weekly working hours
+                    </td>
+                    <td>
+                        <strong>
+                            {{ vacancy.weekly_working_hours_min }} - {{ vacancy.weekly_working_hours_max }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Salary indication
+                    </td>
+                    <td>
+                        <strong>
+                            {{ vacancy.salary_indication_from_amount }} {{ vacancy.salary_indication_from_currency }} - {{ vacancy.salary_indication_to_amount }} {{ vacancy.salary_indication_to_currency }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Job description
+                    </td>
+                    <td>
+                        <strong>
+                            {{ vacancy.description }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Applicants method
+                    </td>
+                    <td>
+                        <strong>
+                            <a href="{{ vacancy.tracking_application_url }}">{{ vacancy.tracking_application_url }}</a>
+                        </strong>
+                    </td>
+                </tr>
+            </tbody>
+        </mj-table>
+    </mj-column>
+</mj-section>

@@ -2,4 +2,4 @@
 !.gitignore
 !.mjmlconfig
 /node_modules/
-
+.idea/

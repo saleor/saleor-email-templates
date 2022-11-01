@@ -1,0 +1,41 @@
+<mj-section>
+    <mj-column>
+        <mj-text font-size="24px" padding-bottom="25px">
+            Your contact details
+        </mj-text>
+        <mj-table css-class="table-with-border">
+            <tbody>
+                <tr class="table-item-row">
+                    <td>
+                        Company name
+                    </td>
+                    <td>
+                        <strong>
+                            {{ order.billing_address.company_name }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <strong>
+                            {{ recipient_email }}
+                        </strong>
+                    </td>
+                </tr>
+                <tr class="table-item-row">
+                    <td>
+                        Phone number
+                    </td>
+                    <td>
+                        <strong>
+                            {{ order.billing_address.phone }}
+                        </strong>
+                    </td>
+                </tr>
+            </tbody>
+        </mj-table>
+    </mj-column>
+</mj-section>
