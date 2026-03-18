@@ -26,11 +26,6 @@
             {{/if}}
           {{/if}}
         </mj-text>
-        <mj-text>
-          {{#if digital_lines}}
-              You can download your digital products by clicking in download link(s).
-          {{/if}}
-        </mj-text>
       </mj-column>
     </mj-section>
     <mj-include path="./partials/_fulfillment_lines.mjml" />
